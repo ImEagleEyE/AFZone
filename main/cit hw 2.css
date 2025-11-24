@@ -1,5 +1,6 @@
 body {
     background: linear-gradient(to right, rgb(72, 107, 98), rgb(34, 223, 197));
+    width: 1140px;
 }
 .mainfloor {
     color: rgb(128, 80, 218);
