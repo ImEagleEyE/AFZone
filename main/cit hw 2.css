@@ -1,0 +1,247 @@
+body {
+    background: linear-gradient(to right, rgb(72, 107, 98), rgb(34, 223, 197));
+}
+.mainfloor {
+    color: rgb(128, 80, 218);
+    opacity: 0.5;
+    position: fixed;
+    pointer-events: none;
+    z-index: -1;
+}
+.anime {
+    animation: anime 5s infinite linear;
+    position: fixed;
+    top:50%;
+    left:37%;
+    transform: translate(-50%, -100%);
+    font-size: 70px;
+}
+.fan {
+    animation: fan 5s infinite linear;
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -100%);
+    font-size: 70px;
+}
+.zone {
+    animation: zone 5s infinite linear;
+    position: fixed;
+    top:50%;
+    left:61%;
+    transform: translate(-50%, -100%);
+    font-size: 70px;
+}
+@keyframes anime {
+    0% { top: 50%; left: 35%;}
+    16% { top: 3%; left: 15%; color: black;}
+    17% {color: white;}
+    32% {top: 20%; left: 8%;color: white;}
+    33% {color: blue;}
+    48% {top: 95%; left: 20%; color: blue;}
+    49% {color: black;}
+    64% { top: 50%; left: 35%;}
+    80% {left:30%; font-size: 110px;}
+    100% {font-size: 70px;}
+}
+@keyframes fan {
+    0% { top: 50%; left: 50%;}
+    20% {top: 3.5%; left: 50%;}
+    40% {top: 94%; left: 50%;}
+    60% { top: 50%; left: 50%;}
+    80% {font-size: 110px;}
+    100% {font-size: 70px;}
+}
+@keyframes zone {
+    0% { top: 50%; left: 63%;}
+    16% { top: 94%; left: 85%; color: black;}
+    17% {color: white;}
+    32% {top: 80%; left: 93.5%; color: white;}
+    33% {color: blue;}
+    48% {top: 3%; left: 80%; color: blue;}
+    49% {color: black;}
+    64% { top: 50%; left: 63%;}
+    80% {left:70%; font-size: 110px;}
+    100% {font-size: 70px;}
+}
+.navigator {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.logo h1{
+    display: flex;
+    height: 60px;
+    width: 200px;
+    color: rgb(75, 224, 155);
+    align-items: start;
+    justify-content: start;
+    margin: 0;
+    font-size: 50px;
+}
+.options {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    width: 900px;
+    background-color: red;
+    font-size: 16px;
+}
+.options a {
+    font-weight: bold;
+    color: rgb(115, 255, 0);
+    text-decoration: none;
+    background: none;
+    transition: .4s;
+}
+.options1 {
+    left: 0;
+    position: absolute;
+    transform: translate(-50%,-50%)
+}
+.options2 {
+    left: 600px;
+    position: absolute;
+    transform: translate(-50%,-50%)
+}
+.options3 {
+    left: 300px;
+    position: absolute;
+    transform: translate(-50%,-50%)
+}
+.options4 {
+    left: 870px;
+    position: absolute;
+    transform: translate(-50%,-50%)
+}
+.options1:hover{
+    font-size: 23px;
+}
+.options2:hover{
+    font-size: 23px;
+}
+.options3:hover{
+    font-size: 23px;
+}
+.options4:hover{
+    font-size: 23px;
+}
+.scroll {
+    font-size: 40px;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.down {
+    font-size: 20px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%) scale(1);
+    transform-origin: center center;
+    color: rgb(255, 115, 0);
+    animation: down 2s infinite linear;
+}
+@keyframes down {
+    0%   { transform: translateX(-50%) scale(1);   color: rgb(255, 115, 0); }
+    20%  { transform: translateX(-50%) scale(1.4); color: rgb(0, 140, 255); }
+    40%  { transform: translateX(-50%) scale(1.8); color: rgb(255, 0, 0); }
+    60%  { transform: translateX(-50%) scale(1.4); color: rgb(255, 238, 0); }
+    80%  { transform: translateX(-50%) scale(1);   color: rgb(255, 115, 0); }
+}
+.posters {
+    display: flex;
+    position: relative;
+    margin-top: 500px;
+    margin-bottom: 100px;
+    height: 50vh;
+    width: 1340px;
+}
+
+#goku {
+    width: 150px;
+    left: 4%;
+    position: absolute;
+    transition: .3s;
+}
+#goku:hover {
+    width: 200px;
+    transform: translate(-10%, -20%);
+}
+#demon {
+    width: 250px;
+    position: absolute;
+    left: 25%;
+    top: -3%;
+    transition: .3s;
+}
+#demon:hover {
+    width: 300px;
+    transform: translate(-10%, -20%);
+}
+#naruto {
+    width: 180px;
+    position: absolute;
+    left: 55%;
+    transition: .3s;
+}
+#naruto:hover {
+    width: 230px;
+    transform: translate(-10%, -20%);
+}
+#pokemon {
+    width: 230px;
+    position: absolute;
+    left: 80%;
+    transition: .3s;
+}
+#pokemon:hover {
+    width: 280px;
+    transform: translate(-10%, -20%);
+}
+button {
+    background-color: rgb(99, 160, 230);
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover {
+    background-color: rgb(45, 226, 151);
+    color: rgb(255, 255, 255);
+}
+button:active {
+    background-color: rgb(228, 115, 115);
+    color: rgb(101, 213, 221);
+}
+#dz {
+    top: 80%;
+    left: 4%;
+    padding: 0px 20px;
+    position: absolute;
+}
+#ds {
+    top: 80%;
+    left: 29%;
+    padding: 0px 20px;
+    position: absolute;
+}
+#nr {
+    top: 80%;
+    left: 58%;
+    padding: 0px 20px;
+    position: absolute;
+}
+#pk {
+    top: 80%;
+    left: 86%;
+    padding: 0px 20px;
+    position: absolute;
+}
