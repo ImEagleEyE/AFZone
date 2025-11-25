@@ -1,8 +1,3 @@
-@media (max-width: 480px) {
-    body {
-        font-size: 12px;
-    }
-}
 body {
     background: linear-gradient(to right, rgb(214, 149, 149), rgb(231, 194, 114));
     margin: 0;
@@ -18,7 +13,7 @@ body {
     opacity: 0.5;
     position: relative;
     pointer-events: none;
-    padding-bottom: 555px;
+    padding-bottom: 500px;
 }
 .anime {
     animation: anime 5s infinite linear;
@@ -46,11 +41,11 @@ body {
 }
 @keyframes anime {
     0% { top: 50%; left: 35%;}
-    16% { top: -9%; left: 15%; color: black;}
+    16% { top: -23%; left: 15%; color: black;}
     17% {color: white;}
     32% {top: 20%; left: 8%;color: white;}
     33% {color: blue;}
-    48% {top: 95%; left: 20%; color: blue;}
+    48% {top: 92%; left: 20%; color: blue;}
     49% {color: black;}
     64% { top: 50%; left: 35%;}
     80% {left:30%; font-size: 110px;}
@@ -58,19 +53,19 @@ body {
 }
 @keyframes fan {
     0% { top: 50%; left: 50%;}
-    20% {top: -9%; left: 50%;}
-    40% {top: 94%; left: 50%;}
+    20% {top: -23%; left: 50%;}
+    40% {top: 92%; left: 50%;}
     60% { top: 50%; left: 50%;}
     80% {font-size: 110px;}
     100% {font-size: 70px;}
 }
 @keyframes zone {
     0% { top: 50%; left: 63%;}
-    16% { top: 94%; left: 85%; color: black;}
+    16% { top: 92%; left: 85%; color: black;}
     17% {color: white;}
     32% {top: 80%; left: 93.5%; color: white;}
     33% {color: blue;}
-    48% {top: -9%; left: 80%; color: blue;}
+    48% {top: -23%; left: 80%; color: blue;}
     49% {color: black;}
     64% { top: 50%; left: 63%;}
     80% {left:70%; font-size: 110px;}
@@ -90,21 +85,21 @@ body {
     width: 100%;
     z-index: 1000;
 }
-.logo h1{
+.logo img{
     display: flex;
-    height: 60px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     color: rgb(75, 224, 155);
     align-items: start;
     justify-content: start;
-    margin: 0;
+    margin: -16px 50px;
     font-size: 50px;
 }
 .options {
     display: flex;
     position: absolute;
     right: 0;
-    top: 30px;
+    top: 50px;
     width: 900px;
     background-color: red;
     font-size: 16px;
