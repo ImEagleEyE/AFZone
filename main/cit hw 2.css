@@ -1,3 +1,8 @@
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;  /* Even smaller font size for mobile screens */
+    }
+}
 body {
     background: linear-gradient(to right, rgb(214, 149, 149), rgb(231, 194, 114));
     margin: 0;
